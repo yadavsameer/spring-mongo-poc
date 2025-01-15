@@ -1,0 +1,41 @@
+Recommended Serverless Architecture on Azure
+1. Core Services (Azure Components)
+Azure Functions (for backend logic)
+Azure Cosmos DB (for NoSQL database)
+Azure API Management (for managing APIs)
+Azure Static Web Apps (for hosting Angular frontend)
+Azure Event Grid (for event-driven communication)
+Azure Key Vault (for secrets management)
+Architecture Overview
+Frontend (Angular 19)
+
+Deployed via Azure Static Web Apps.
+Leverage native federation for micro frontends.
+Use Azure CDN for faster content delivery.
+Backend (Spring Boot)
+
+Implement core logic in Azure Functions.
+Use Durable Functions for complex orchestrations.
+Use API Management to expose APIs securely.
+Database (Azure Cosmos DB)
+
+Use MongoDB API for flexible schema and querying.
+Ensure auto-scaling to handle dynamic workloads.
+Use Partitioning to optimize performance and cost.
+Event-driven Communication
+
+Use Event Grid for seamless integration between microservices and real-time notifications.
+Implement Azure Service Bus for reliable message delivery.
+Security
+
+Use Azure Key Vault to manage secrets (e.g., API keys, connection strings).
+Integrate Azure AD B2C for secure user authentication.
+Cost and Sustainability
+Pay-as-you-go pricing in Azure Functions makes the architecture cost-effective.
+Azure Monitor for observability and diagnostics.
+Use Azure Advisor to optimize costs and ensure sustainability.
+Benefits
+Scalable: Auto-scaling of functions and Cosmos DB.
+Reliable: Built-in redundancy in Azure services.
+Cost-Effective: Pay-per-use model for serverless services.
+Secure: Managed through Azure security best practices.
